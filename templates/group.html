@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script type="text/javascript">
+function getPageTitle() {
+    $('#linklist').children().each(function() {
+        var url = $(this).html();
+        var el = $(this)
+        $.ajax({
+            url: "/tools/parseURL/",
+            type: "post",
+            data: 'url=' + escape(url),
+            success: function(data) {
+                el.append("<br /><span style='font-size: 11px; color: #a44'>" + data + "</span><br /><br />");
+            }
+        });
+    });
+}
+    
+$(document).ready(function() {
+});
+</script>
+{% endblock %}
+
+{% block content %}
+    <strong>{{ group.title }}</strong><br />
+    {{ group.description }}<ul id='linklist'>
+    {% for l in links %}
+        <li>{{ l.url }}</li>
+    {% endfor %}
+    </ul>
+    <a href="javascript:getPageTitle();">Fetch titles...</a>
+{% endblock %}

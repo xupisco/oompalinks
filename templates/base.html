@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>{% block title %}compLink{% endblock %}</title>
+    <link href="/static/css/base.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    {% block script %}{% endblock %}
+</head>
+
+<body>
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}    
+</body>
+</html>
