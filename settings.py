@@ -15,7 +15,7 @@ ADMINS = (
     ('Leandro Voltolino', 'xupisco@gmail.com'),
 )
 
-PROJECT_NAME = "compLink"
+PROJECT_NAME = "oompaLinks"
 GRAPPELLI_ADMIN_TITLE = getattr(settings, "GRAPPELLI_ADMIN_TITLE", PROJECT_NAME)
 INTERNAL_IPS = ('127.0.0.1', )
 
