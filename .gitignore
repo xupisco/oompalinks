@@ -3,3 +3,4 @@
 _matrix/
 .svn
 *.db
+settings_local.py
