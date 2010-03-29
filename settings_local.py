@@ -58,3 +58,8 @@ INSTALLED_APPS = (
     #'tagging',
     'grappelli',
 )
+
+if os.path.exixts('apps/grappelli'):
+    INSTALLED_APPS.append('apps/grappelli')
+else 
+    INSTALLED_APPS.append('grappelli')
