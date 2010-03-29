@@ -33,11 +33,8 @@ MEDIA_ROOT = os.path.join(ROOT_PATH, 'static')
 MEDIA_URL = 'http://' + CURRENT_SERVER + '/static'
 ADMIN_MEDIA_PREFIX = 'http://' + CURRENT_SERVER + '/media/admin/'
 
-MEDIA_ROOT = os.path.join(ROOT_PATH, 'static')
-MEDIA_URL = 'http://xupisco.tomada.us/static'
-ADMIN_MEDIA_PREFIX = 'http://xupisco.tomada.us/media/admin/'
-
 ROOT_URLCONF = 'urls'
+
 #AUTH_PROFILE_MODULE = 'accounts.userprofile'
 
 MANAGERS = ADMINS
