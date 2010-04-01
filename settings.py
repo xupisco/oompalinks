@@ -50,6 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ugettext = lambda s: s
@@ -83,5 +84,5 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'apps.links',
     'grappelli',
-    #'tagging',
+    'debug_toolbar',
 )

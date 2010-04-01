@@ -17,26 +17,10 @@ Você precisa ter o arquivo **settings_local.py** no root da aplicação, com as
     CURRENT_SERVER = "127.0.0.1:8000"
     
 
-##It's something like this...
+##Dependências (so far...)
 
-Oompa Loompa doompadee doo  
-I've got another puzzle for you  
-Oompa Loompa doompadah dee  
-If you are wise you'll listen to me
-
-What do you get from a glut of TV?  
-A pain in the neck and an IQ of three  
-Why don't you try simply reading a book?  
-Or could you just not bear to look?
-
-You'll get no  
-You'll get no  
-You'll get no  
-You'll get no  
-You'll get no commercials
-
-Oompa Loompa Doompadee Dah  
-If you're not greedy you will go far  
-You will live in happiness too  
-Like the Oompa  
-Oompa Loompa doompadee do
+ * Grappelli: [http://code.google.com/p/django-grappelli/][1]
+ * Debug-Toolbar: [http://github.com/robhudson/django-debug-toolbar][2]
+ 
+[1]: http://code.google.com/p/django-grappelli/
+[2]: http://github.com/robhudson/django-debug-toolbar
