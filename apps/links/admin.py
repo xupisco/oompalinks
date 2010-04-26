@@ -8,7 +8,7 @@ class LinkGroupOptions(admin.ModelAdmin):
 
 
 class LinkOptions(admin.ModelAdmin):
-    list_display = ('c_owner', 'group', 'url', )
+    list_display = ('c_owner', 'group', 'url', 'weight')
     
     def c_owner(self, obj):
         return obj.group.owner
@@ -16,3 +16,4 @@ class LinkOptions(admin.ModelAdmin):
 
 admin.site.register(LinkGroup, LinkGroupOptions)
 admin.site.register(Link, LinkOptions)
+admin.site.register(Category)

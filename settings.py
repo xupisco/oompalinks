@@ -85,4 +85,5 @@ INSTALLED_APPS = (
     'apps.links',
     'grappelli',
     'debug_toolbar',
+    'tagging'
 )
